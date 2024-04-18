@@ -215,7 +215,7 @@ public class AsyncLoadImage extends AsyncTask<Void, Void, AsyncLoadImage.AsyncLo
           !iconUrl.startsWith("data:image") &&
           !iconUrl.startsWith("./") &&
           !iconUrl.startsWith("../")) {
-        iconUrl = "./" + iconUrl;
+        iconUrl = "file:///android_asset/www/" + iconUrl;
         //Log.d(TAG, "--> iconUrl = " + iconUrl);
       }
 
